@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#fcfcfc" >
+
+    <!-- 活动展示主图  80x80 -->
+
+    <ImageView
+        android:id="@+id/iv_activity_show"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/huwaiyundong"
+        android:clickable="true"
+        android:contentDescription="活动展示主图"
+        android:onClick="head_xiaohei" />
+    
+    <!-- 活动发起者信息区 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/iv_activity_show"
+        android:contentDescription="发起信息布局（包含两个布局文字和按钮）" >
+
+        <RelativeLayout
+            android:id="@+id/upright"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            >
+            <!-- 活动发起者头像  36x36 -->
+            <ImageView
+                android:id="@+id/iv_holder"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="活动发起人头像"
+                android:layout_centerVertical="true"
+                android:background="@drawable/kangfuyundong" />
+<!-- 活动相关信息文字显示区 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_part_list_item_partyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="3dp" 
+                android:layout_toRightOf="@id/iv_holder"
+                >
+
+                <!-- 活动分类显示 -->
+            <TextView
+                android:id="@+id/tv_activityname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动名称" />
+            <TextView
+                android:id="@+id/tv_activityclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="类别" />
+
+            <TextView
+                android:id="@+id/tv_activitydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_activityname"
+                android:text="时间" />
+             <TextView
+                android:id="@+id/tv_activityplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_activityclass"
+                android:text="地点" />
+            
+
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="30dp"
+        	    android:layout_alignParentBottom="true">
+
+	<Button
+	    android:id="@+id/btn_apply"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/login_bg"
+	    android:layout_margin="5dp"
+	    android:text="参与" />
+
+        <Button
+            android:id="@+id/btn_concern"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/login_bg"
+            android:layout_margin="5dp"
+            android:text="关注" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="微信"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/right_btn"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_btn_right"
+            android:onClick="btnmainright"
+            android:src="@drawable/title_btn_function" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/head1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dazhongjianshen" />
+        <TextView
+                android:id="@+id/label1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head1"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="大众健身"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/head1"
+            android:padding="0dp"
+            android:src="@drawable/xiuxianlvxing" />
+        <TextView
+                android:id="@+id/label2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head2"
+                android:layout_toRightOf="@id/head1"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="休闲旅行"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/head2"
+            android:padding="0dp"
+            android:src="@drawable/wushujianti" />
+        <TextView
+                android:id="@+id/label3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head3"
+                android:layout_toRightOf="@id/head2"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="武术健体"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/head3"
+            android:padding="0dp"
+            android:src="@drawable/zijiafangche" />
+        <TextView
+                android:id="@+id/label4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head4"
+                android:layout_toRightOf="@id/head3"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="自驾房车"
+                android:textSize="15sp" />
+                
+
+        <ImageView
+            android:id="@+id/head5"
+            android:layout_below="@id/head1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sheyingguancha" />
+        <TextView
+                android:id="@+id/label5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head5"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="摄影观察"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head6"
+            android:layout_below="@id/head2"
+            android:layout_toRightOf="@id/head5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="0dp"
+            android:src="@drawable/kekaotanxian" />
+        <TextView
+                android:id="@+id/label6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head6"
+                android:layout_toRightOf="@id/head5"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="科考探险"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head7"
+            android:layout_below="@id/head3"
+            android:layout_toRightOf="@id/head6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="0dp"
+            android:src="@drawable/huwaiyundong" />
+        <TextView
+                android:id="@+id/label7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head7"
+                android:layout_toRightOf="@id/head6"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="户外运动"
+                android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/head8"
+            android:layout_below="@id/head4"
+            android:layout_toRightOf="@id/head7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="0dp"
+            android:src="@drawable/kangfuyundong" />
+        <TextView
+                android:id="@+id/label8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/head8"
+                android:layout_toRightOf="@id/head7"
+                android:gravity="center"
+                android:scaleType="center"
+                android:text="康复运动"
+                android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/top_theme_blue"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_tab_meinv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="按热门"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_luoli"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="按时间"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_qiche"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="附近"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="3dip" >
+
+            <ImageView
+                android:id="@+id/iv_bottom_line"
+                android:layout_width="40dip"
+                android:layout_height="2dip"
+                android:layout_marginLeft="33dip"
+                android:scaleType="matrix"
+                android:src="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#fcfcfc"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

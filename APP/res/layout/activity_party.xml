@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/header_party"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/layout_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_party">
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" 
+            android:onClick="btnJoin"
+            android:text="我参与的"/>
+
+        <Button
+            android:id="@+id/btn_favorite"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="btnFavorite"
+            android:text="我关心的"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_join"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_nav"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/lv_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:divider="#ffffff"
+	        android:dividerHeight="1dp"
+	        android:cacheColorHint="#aa000000"
+	        android:scrollingCache="false">
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_nav" 
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/lv_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:divider="#ffffff"
+	        android:dividerHeight="5dp"
+	        android:cacheColorHint="#aa000000"
+	        android:scrollingCache="false" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

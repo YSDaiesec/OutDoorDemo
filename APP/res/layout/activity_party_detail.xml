@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 活动主图显示区 -->
+    
+    <ImageView
+        android:id="@+id/img_Party"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#ff89ab"
+        android:contentDescription="活动详情主图"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 活动相关信息显示区 -->
+    
+    <RelativeLayout
+        android:id="@+id/rl_part_detail_Info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/img_Party"
+        android:layout_alignBaseline="@id/img_Party"
+        android:background="#abc000" >
+        
+        <!-- 活动发起人头像显示区 -->
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="发起活动用户头像"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+		<!-- 活动相关文字信息显示区 -->        
+
+        <RelativeLayout
+            android:id="@+id/rl_part_detail_textInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/img_user"
+            android:gravity="center_vertical"
+            android:padding="3dp" >
+
+            <!-- 活动发起人用户名显示 -->
+
+            <TextView
+                android:id="@+id/tv_party_detail_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="left"
+                android:text="小华"
+                android:textSize="12sp" />
+
+            <!-- 活动发起人用户角色显示-->
+
+            <TextView
+                android:id="@+id/tv_party_detail_user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/tv_party_detail_user_name"
+                android:layout_alignBaseline="@id/tv_party_detail_user_name"
+                android:gravity="right"
+                android:text="运动员"
+                android:textSize="10sp" />
+
+            <!-- 活动分类显示 -->
+
+            <TextView
+                android:id="@+id/tv_party_detail_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_party_detail_user_name"
+                android:gravity="left"
+                android:text="登山"
+                android:textSize="12sp" />
+
+            <!-- 活动具体时间显示 -->
+
+            <TextView
+                android:id="@+id/tv_party_detail_activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_party_detail_user_role"
+                android:layout_toRightOf="@id/tv_party_detail_category_name"
+                android:layout_alignBaseline="@id/tv_party_detail_category_name"
+                android:gravity="right"
+                android:text="登珞珈山"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+            android:id="@+id/rl_part_detail_date_position"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/rl_part_detail_Info"
+            android:layout_alignLeft="@id/rl_part_detail_Info"
+            android:gravity="center"
+            android:background="#abc000">
+            
+            <TextView 
+                android:id="@+id/tv_party_date_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:layout_marginRight="5dp"
+                android:text="时间: "/>
+            
+            <TextView 
+                android:id="@+id/tv_party_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_party_date_lable"
+                android:layout_alignBaseline="@id/tv_party_date_lable"
+                android:textSize="10dp"
+                android:text="2014-4-2 14:00"/>
+            
+            <TextView 
+                android:id="@+id/tv_party_position_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_party_date_lable"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:layout_marginRight="5dp"
+                android:text="地点: "/>
+            
+            <TextView 
+                android:id="@+id/tv_party_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_party_position_lable"
+                android:layout_below="@id/tv_party_date"
+                android:layout_alignBaseline="@id/tv_party_position_lable"
+                android:textSize="10dp"
+                android:text="湖北省武汉市武昌区八一路武汉大学珞珈山"/>
+            
+        </RelativeLayout>
+
+    	<RelativeLayout
+    	    android:id="@+id/rl_party_detail_func_btn"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/img_Party"
+    	    android:padding="8dp">
+    	    
+    	    <Button
+    	        android:id="@+id/btn_joinUs"
+    	        android:layout_width="150dp"
+    	        android:layout_height="30dp"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_marginRight="50dp"
+    	        android:layout_marginLeft="3dp"
+    	        android:background="#af784d"
+    	        android:text="我要参加" />
+    	    
+    	    <TextView 
+    	        android:id="@+id/tv_user_number_of_joinIn"
+    	        android:layout_width="150dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@id/btn_joinUs"
+    	        android:layout_alignLeft="@id/btn_joinUs"
+    	        android:layout_marginLeft="50dp"
+    	        android:layout_marginTop="3dp"
+    	        android:textSize="10sp"
+    	        android:text="25人已参加"/>
+    	    
+    	    <Button
+    	        android:id="@+id/btn_focusOn"
+    	        android:layout_width="150dp"
+    	        android:layout_height="30dp"
+    	        android:layout_alignParentTop="true"
+    	        android:layout_toRightOf="@id/btn_joinUs"
+    	        android:background="#af784d"
+    	        android:text="关注" />
+    	    
+    	    <TextView 
+    	        android:id="@+id/tv_user_number_of_joinIn"
+    	        android:layout_width="150dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@id/btn_focusOn"
+    	        android:layout_alignLeft="@id/btn_focusOn"
+    	        android:layout_marginLeft="50dp"
+    	        android:layout_marginTop="3dp"
+    	        android:textSize="10sp"
+    	        android:text="40人已关注"/>
+
+    	</RelativeLayout>
+    	
+    	<RelativeLayout 
+    	    android:id="@+id/rl_part_detail_description"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_below="@id/rl_party_detail_func_btn">
+    	    
+    	    <TextView 
+    	        android:id="@+id/tv_description_label"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginBottom="3dp"
+    	        android:text="活动描述"/>
+    	    
+    	    <EditText 
+    	        android:id="@+id/et_party_description"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@id/tv_description_label"
+    	        android:layout_marginBottom="10dp"
+    	        android:textSize="10dp"
+    	        android:textStyle="normal"
+    	        android:text="天气那么好，你还待在宿舍玩游戏吗？中午12点了你还在睡懒觉？别浪费青春了，帅哥美女们出来一起运动吧！武汉大学珞珈山是一个文化积淀的城中山，上面有武汉大学古老的建筑，山下还有防空洞，爬山探险，够刺激！！！一起加入吧！！"
+    	        android:editable="false"/>
+    	    
+    	    <TextView 
+    	        android:id="@+id/tv_comments_label"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@id/et_party_description"
+    	        android:layout_marginBottom="3dp"
+    	        android:text="活动评论"/>
+    	    
+    	    <EditText 
+    	        android:id="@+id/et_party_comments"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@id/tv_comments_label"
+    	        android:editable="false"/>
+    	    
+    	    <!-- 发表评论按钮 -->
+    	    <Button
+    	        android:id="@+id/btn_make_comment"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="35dp"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_below="@id/et_party_comments"
+    	        android:text="发表" />
+    	    
+    	</RelativeLayout>
+    	
+    	<LinearLayout
+    	    android:id="@+id/ll_btn_func_toolbar"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="35dp"
+    	    android:orientation="horizontal"
+    	    android:layout_alignParentBottom="true">
+    	    
+    	    <Button 
+    	        android:id="@+id/btn_toolbar_zan"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="赞"/>
+    	    
+    	    <Button 
+    	        android:id="@+id/btn_toolbar_share"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="分享"/>
+    	    
+    	    <Button 
+    	        android:id="@+id/btn_toolbar_comment"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="评论"/>
+    	    
+    	    <Button 
+    	        android:id="@+id/btn_toolbar_call"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="呼叫发起人"/>
+    	    
+    	    <Button 
+    	        android:id="@+id/btn_toolbar_knowledge"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="查看相关知识"/>
+    
+    	</LinearLayout>
+
+</RelativeLayout>

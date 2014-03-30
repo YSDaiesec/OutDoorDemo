@@ -1,0 +1,95 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.buaa.myweixin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+         >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="67d25f29b66a4b6a2ac68f04bc01851f" />
+        <activity
+            android:name="com.geniuseoe.demo.WelcomeActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.geniuseoe.demo.LoginActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:name="com.geniuseoe.demo.RegisterActivity" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.geniuseoe.demo.Utils"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Anim_style2" 
+            android:screenOrientation="portrait"/>
+            <activity
+            android:name="com.geniuseoe.demo.DialogFactory"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Anim_style2" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WhatsnewDoor" android:theme="@style/Anim_style2" android:screenOrientation="portrait"/>
+        <activity android:name=".MainWeixin" android:theme="@style/Anim_style2" android:screenOrientation="portrait"/>
+        <activity android:name=".Login"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>        
+        <activity android:name=".Welcome"  android:theme="@style/Anim_style2"  android:screenOrientation="portrait"/>
+        <activity android:name=".Whatsnew"  android:theme="@style/Anim_style2" />
+        <activity android:name=".ChatActivity"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ShakeActivity"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".InfoXiaohei"  android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name="Exit" android:theme="@style/MyDialogStyle" android:screenOrientation="portrait"/>        
+        <activity android:name="ExitFromSettings" android:theme="@style/MyDialogStyleBottom" android:screenOrientation="portrait"/> 
+        <activity android:name="InfoXiaoheiHead" android:theme="@style/HeadScale" android:screenOrientation="portrait"/>
+        <activity android:name="LoadingActivity" android:theme="@style/MyDialogStyle" android:screenOrientation="portrait"/>             
+        <activity android:name="MainTopRightDialog" android:theme="@style/MyDialogStyleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.amap.LocationSourceActivity" android:screenOrientation="portrait"></activity> 
+    <!-- 活动界面activity -->
+        <activity
+            android:name="com.outdoor.view.PartyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.outdoor.view.ChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.outdoor.view.LookInMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.outdoor.view.ItemDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
