@@ -6,6 +6,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.amap.LocationSourceActivity;
+//import com.example.zouchuqu.MainActivity;
+import com.example.zouchuqu.about;
+import com.example.zouchuqu.feedback;
+import com.example.zouchuqu.info_setting;
 import com.outdoor.adapter.PartyListAdapter;
 import com.outdoor.model.Party;
 import com.outdoor.view.ChatActivity;
@@ -141,13 +145,20 @@ public class MainWeixin extends Activity{
         view_tab1 = mLi.inflate(R.layout.main_tab_weixin, null);
         view_tab2 = mLi.inflate(R.layout.activity_party, null);
         view_tab3 = mLi.inflate(R.layout.main_tab_friends, null);
-        view_tab4 = mLi.inflate(R.layout.main_tab_settings, null);
+        view_tab4 = mLi.inflate(R.layout.activity_main, null);
         //view_tab1中部ViewPager初始化
 		InitImageView();
 		InitTextView();
 		InitViewPager();
 		//view_tab2内容初始化
+		/**view_tab3内容初始化
+		 * 小石“活动“界面
+		 */
 		InitTab2Content();
+		
+		/**view_tab3内容初始化
+		 * 杨少东“我的界面”
+		 */
 		
 		
 		
@@ -399,7 +410,27 @@ public class MainWeixin extends Activity{
 		startActivity(tolookMapActivity);
 	}
 	//----------------------------------Tab2设计到的点击事件----------------------------
+	/**view_tab3内容初始化
+	 * 杨少东“我的界面”
+	 */
+	//public void btnToChat(View v)
+	public void toAbout(View v) {
+		Intent intent=new Intent();
+		intent.setClass(MainWeixin.this, about.class );
+		MainWeixin.this.startActivity(intent);
+	}
 	
+	public void toFeedback(View v) {
+		Intent intent=new Intent();
+		intent.setClass(MainWeixin.this, feedback.class );
+		MainWeixin.this.startActivity(intent);
+	}
+	
+	public void toPersonSetting(View v) {
+		Intent intent=new Intent();
+		intent.setClass(MainWeixin.this, info_setting.class );
+		MainWeixin.this.startActivity(intent);
+	}
 	
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~主页中部ViewPager对象调用的方法
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~主页中部ViewPager对象调用的方法
@@ -601,6 +632,7 @@ public class MainWeixin extends Activity{
             imageView.startAnimation(animation);  
 		}
 		
+
 	}
 }
     

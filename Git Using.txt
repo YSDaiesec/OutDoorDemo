@@ -1,0 +1,11 @@
+1.    $ ssh -T git@github.com
+2.    $ git add *
+3.    $ git commit -m "记录一下这次更新都有哪一些内容"
+4.    $ git push origin master
+
+
+git config http.postBuffer 524288000
+
+
+stonekity
+Stonekity201214{}

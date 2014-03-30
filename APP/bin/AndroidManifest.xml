@@ -90,6 +90,23 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
+        
+        <!-- ——————————————————————————————————我界面———————————————————————————————— -->
+        <activity
+            android:name="com.example.zouchuqu.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity  android:name="com.example.zouchuqu.info_setting"
+                   android:theme="@android:style/Theme.NoTitleBar"
+                   android:screenOrientation="portrait"/>
+        <activity  android:name="com.example.zouchuqu.about"
+                   android:theme="@android:style/Theme.NoTitleBar"
+                   android:screenOrientation="portrait"/>
+        <activity  android:name="com.example.zouchuqu.feedback"
+                   android:theme="@android:style/Theme.NoTitleBar"
+                   android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

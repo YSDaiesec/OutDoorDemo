@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+          <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title2" 
+  			android:gravity="center_vertical"
+  			android:background="@drawable/title_bar"
+  			android:orientation="horizontal">
+  			<RelativeLayout
+            	   android:layout_width="fill_parent"
+            	   android:layout_height="wrap_content"
+            	   android:gravity="center_vertical" >
+            <ImageView
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="fitStart"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:clickable="true"
+        		android:src="@drawable/mm_leftmenu" />
+             <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="个人资料"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff"
+				android:layout_centerHorizontal="true" 
+				android:gravity="center"/>
+             <ImageView
+            	 android:layout_width="wrap_content"
+        		 android:layout_height="wrap_content"        	     	
+        		 android:scaleType="fitEnd"
+        		 android:layout_centerVertical="true"
+        		 android:layout_alignParentRight="true"
+        		 android:clickable="true"
+        		 android:src="@drawable/mm_rightmenu" />
+          </RelativeLayout>
+         
+  		</LinearLayout>
+  		<!-- *************************************  -->
+  		     <TableLayout 
+  			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:shrinkColumns="1"
+            android:stretchColumns="2" >
+  			 <TableRow >
+  			      <ImageView
+                       android:layout_width="72dp"
+                       android:layout_height="72dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginLeft="8dp"
+                       android:layout_marginRight="4dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/person_pic" />
+  			      <TableLayout >
+  			          <TableRow >
+  			              <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:text="姓名：紫黛"
+                              android:layout_marginLeft="8dp"
+                              android:layout_marginRight="4dp"
+                              android:textColor="#000"
+                              android:textSize="15sp" />
+  			               <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:text="等级：LV3"
+                              android:layout_marginLeft="16dp"
+                              android:layout_marginRight="8dp"
+                              android:textColor="#000"
+                              android:textSize="15sp" />
+  			                <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:layout_marginLeft="2dp"
+                              
+                              android:text="积分：15"
+                              android:textColor="#000"
+                              android:textSize="15sp" />
+  			          </TableRow>
+  			          <TableRow >
+  			                 <ImageView
+                              android:id="@+id/gender"
+                              android:layout_width="36dp"
+                              android:layout_height="36dp"
+                              android:src="@drawable/person_gender" /> 
+                             <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="5dp"
+                              android:text="年龄：21"
+                              android:layout_marginLeft="16dp"
+                              android:layout_marginRight="8dp"
+                              android:textColor="#000"
+                              android:textSize="15sp" />
+                             
+  			          </TableRow>   
+  			              
+  			      </TableLayout>
+  			       </TableRow>
+  			   </TableLayout>
+  	  <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="center_vertical"
+  			android:orientation="vertical">
+  	      
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_first_item"
+                android:text="职业：网球运动员"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:background="@drawable/preference_item"
+                android:text="公司：无"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_item"
+                android:text="学校：武汉大学"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_item"
+                android:text="户外爱好：网球，KTV，瑜伽"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_item"
+                android:text="户外技能：野外求生：识别技能"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_last_item"
+                android:text="所在地：湖北武汉"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                
+                android:text="个性签名："
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/preference_item"
+                android:text="每次的歇息，总是带来新的向往。所有的极端与对立都告消失之处，即是涅槃。"
+                android:textColor="#000"
+                android:textSize="20sp" />
+  	  </LinearLayout>"
+  			   
+          
+     
+</LinearLayout>          
+  			
