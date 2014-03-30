@@ -9,7 +9,4 @@
 		<item name="android:backgroundDimEnabled">true</item>                          <!-- 设置屏幕变暗 -->   
 	</style>
 
-
-
-
 </resources>

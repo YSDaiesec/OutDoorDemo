@@ -13,6 +13,7 @@ import com.example.zouchuqu.info_setting;
 import com.outdoor.adapter.PartyListAdapter;
 import com.outdoor.model.Party;
 import com.outdoor.view.ChatActivity;
+import com.outdoor.view.ItemDetailActivity;
 import com.outdoor.view.LookInMapActivity;
 import com.outdoor.view.PartyActivity;
 
@@ -398,6 +399,12 @@ public class MainWeixin extends Activity{
 		}
 	}
 	
+	//点击Tab2中item项时产生的点击事件
+	public void itemClick(View v) {
+		Intent todetailActivity = new Intent(MainWeixin.this, ItemDetailActivity.class);
+		startActivity(todetailActivity);
+	}
+	
 	//跳转到成员聊天的界面
 	public void btnToChat(View v){
 		Intent toChatActivity = new Intent(MainWeixin.this, ChatActivity.class);
@@ -409,6 +416,7 @@ public class MainWeixin extends Activity{
 		Intent tolookMapActivity = new Intent(MainWeixin.this, LookInMapActivity.class);
 		startActivity(tolookMapActivity);
 	}
+	
 	//----------------------------------Tab2设计到的点击事件----------------------------
 	/**view_tab3内容初始化
 	 * 杨少东“我的界面”
@@ -508,6 +516,7 @@ public class MainWeixin extends Activity{
 		
 	}
 	
+	//模拟Tab2中ListView的数据
 	private void initTab2Date() {
 		partyJoinList = new ArrayList<Party>();
 		partyJoinList.add(new Party("旅游", "武大看樱花", "武汉大学", "2014-3-2 14:00"));

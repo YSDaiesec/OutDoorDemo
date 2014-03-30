@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <!-- 头布局的文字未修改 -->
+    <include
+        layout="@layout/header" 
+        android:id="@+id/header" />
+        "
     <!-- 活动主图显示区 -->
     
     <ImageView
@@ -11,6 +16,8 @@
         android:layout_height="80dp"
         android:background="#ff89ab"
         android:contentDescription="活动详情主图"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
         android:src="@drawable/ic_launcher" />
 
     <!-- 活动相关信息显示区 -->
@@ -21,6 +28,8 @@
         android:layout_height="45dp"
         android:layout_toRightOf="@id/img_Party"
         android:layout_alignBaseline="@id/img_Party"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/header"
         android:background="#abc000" >
         
         <!-- 活动发起人头像显示区 -->
@@ -147,12 +156,14 @@
             
         </RelativeLayout>
 
+    	<!-- 按钮区 -->
     	<RelativeLayout
     	    android:id="@+id/rl_party_detail_func_btn"
     	    android:layout_width="match_parent"
     	    android:layout_height="wrap_content"
     	    android:layout_alignParentLeft="true"
     	    android:layout_below="@+id/img_Party"
+    	    android:layout_marginTop="10dp"
     	    android:padding="8dp">
     	    
     	    <Button
@@ -172,7 +183,7 @@
     	        android:layout_below="@id/btn_joinUs"
     	        android:layout_alignLeft="@id/btn_joinUs"
     	        android:layout_marginLeft="50dp"
-    	        android:layout_marginTop="3dp"
+    	        android:layout_marginTop="5dp"
     	        android:textSize="10sp"
     	        android:text="25人已参加"/>
     	    
@@ -192,7 +203,7 @@
     	        android:layout_below="@id/btn_focusOn"
     	        android:layout_alignLeft="@id/btn_focusOn"
     	        android:layout_marginLeft="50dp"
-    	        android:layout_marginTop="3dp"
+    	        android:layout_marginTop="5dp"
     	        android:textSize="10sp"
     	        android:text="40人已关注"/>
 
@@ -202,33 +213,36 @@
     	    android:id="@+id/rl_part_detail_description"
     	    android:layout_width="match_parent"
     	    android:layout_height="wrap_content"
-    	    android:layout_marginTop="10dp"
+    	    android:layout_marginTop="15dp"
     	    android:layout_below="@id/rl_party_detail_func_btn">
     	    
     	    <TextView 
     	        android:id="@+id/tv_description_label"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content"
-    	        android:layout_marginBottom="3dp"
+    	        android:textSize="14sp"
+    	        android:layout_marginBottom="5dp"
     	        android:text="活动描述"/>
     	    
-    	    <EditText 
+    	    <TextView 
     	        android:id="@+id/et_party_description"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content"
     	        android:layout_below="@id/tv_description_label"
-    	        android:layout_marginBottom="10dp"
-    	        android:textSize="10dp"
+    	        android:layout_marginBottom="15dp"
+    	        android:padding="5dp"
+    	        android:textSize="12sp"
     	        android:textStyle="normal"
-    	        android:text="天气那么好，你还待在宿舍玩游戏吗？中午12点了你还在睡懒觉？别浪费青春了，帅哥美女们出来一起运动吧！武汉大学珞珈山是一个文化积淀的城中山，上面有武汉大学古老的建筑，山下还有防空洞，爬山探险，够刺激！！！一起加入吧！！"
-    	        android:editable="false"/>
+    	        android:text="        天气那么好，你还待在宿舍玩游戏吗？中午12点了你还在睡懒觉？别浪费青春了，帅哥美女们出来一起运动吧！武汉大学珞珈山是一个文化积淀的城中山，上面有武汉大学古老的建筑，山下还有防空洞，爬山探险，够刺激！！！一起加入吧！！" 
+    	        />
     	    
     	    <TextView 
     	        android:id="@+id/tv_comments_label"
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content"
     	        android:layout_below="@id/et_party_description"
-    	        android:layout_marginBottom="3dp"
+    	        android:layout_marginBottom="5dp"
+    	        android:textSize="14sp"
     	        android:text="活动评论"/>
     	    
     	    <EditText 
@@ -236,6 +250,7 @@
     	        android:layout_width="match_parent"
     	        android:layout_height="wrap_content"
     	        android:layout_below="@id/tv_comments_label"
+    	        android:layout_marginBottom="10dp"
     	        android:editable="false"/>
     	    
     	    <!-- 发表评论按钮 -->
@@ -249,42 +264,41 @@
     	    
     	</RelativeLayout>
     	
+    	<!-- 给分享的按钮群组添加了一个top_theme_blue -->
     	<LinearLayout
     	    android:id="@+id/ll_btn_func_toolbar"
     	    android:layout_width="match_parent"
-    	    android:layout_height="35dp"
+    	    android:layout_height="50dp"
     	    android:orientation="horizontal"
-    	    android:layout_alignParentBottom="true">
+    	    android:layout_alignParentBottom="true"
+    	    android:gravity="center"
+    	    android:background="@drawable/top_theme_blue">
     	    
     	    <Button 
     	        android:id="@+id/btn_toolbar_zan"
-    	        android:layout_width="wrap_content"
+    	        android:layout_width="80dp"
     	        android:layout_height="wrap_content"
     	        android:text="赞"/>
     	    
     	    <Button 
     	        android:id="@+id/btn_toolbar_share"
-    	        android:layout_width="wrap_content"
+    	        android:layout_width="80dp"
     	        android:layout_height="wrap_content"
     	        android:text="分享"/>
     	    
     	    <Button 
     	        android:id="@+id/btn_toolbar_comment"
-    	        android:layout_width="wrap_content"
+    	        android:layout_width="80dp"
     	        android:layout_height="wrap_content"
     	        android:text="评论"/>
-    	    
-    	    <Button 
-    	        android:id="@+id/btn_toolbar_call"
-    	        android:layout_width="wrap_content"
-    	        android:layout_height="wrap_content"
-    	        android:text="呼叫发起人"/>
+			
+    	    <!-- 删除了下面呼叫活动发起人的按钮 -->
     	    
     	    <Button 
     	        android:id="@+id/btn_toolbar_knowledge"
-    	        android:layout_width="wrap_content"
+    	        android:layout_width="80dp"
     	        android:layout_height="wrap_content"
-    	        android:text="查看相关知识"/>
+    	        android:text="查看知识"/>
     
     	</LinearLayout>
 

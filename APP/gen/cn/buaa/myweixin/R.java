@@ -340,23 +340,22 @@ public final class R {
         public static final int btn_back=0x7f090005;
         public static final int btn_concern=0x7f090014;
         public static final int btn_favorite=0x7f09001f;
-        public static final int btn_focusOn=0x7f090034;
+        public static final int btn_focusOn=0x7f090035;
         public static final int btn_join=0x7f09001e;
-        public static final int btn_joinUs=0x7f090032;
+        public static final int btn_joinUs=0x7f090033;
         public static final int btn_lookInMap=0x7f0900a2;
-        public static final int btn_make_comment=0x7f09003a;
+        public static final int btn_make_comment=0x7f09003b;
         public static final int btn_send=0x7f090008;
         public static final int btn_toChat=0x7f0900a1;
-        public static final int btn_toolbar_call=0x7f09003f;
-        public static final int btn_toolbar_comment=0x7f09003e;
+        public static final int btn_toolbar_comment=0x7f09003f;
         public static final int btn_toolbar_knowledge=0x7f090040;
-        public static final int btn_toolbar_share=0x7f09003d;
-        public static final int btn_toolbar_zan=0x7f09003c;
+        public static final int btn_toolbar_share=0x7f09003e;
+        public static final int btn_toolbar_zan=0x7f09003d;
         public static final int content=0x7f0900ac;
         public static final int data_setting=0x7f090018;
         public static final int email=0x7f0900a3;
-        public static final int et_party_comments=0x7f090039;
-        public static final int et_party_description=0x7f090037;
+        public static final int et_party_comments=0x7f09003a;
+        public static final int et_party_description=0x7f090038;
         public static final int et_sendmessage=0x7f090009;
         public static final int exitBtn0=0x7f090047;
         public static final int exitBtn1=0x7f090048;
@@ -375,6 +374,7 @@ public final class R {
         public static final int head6=0x7f090079;
         public static final int head7=0x7f09007b;
         public static final int head8=0x7f09007d;
+        public static final int header=0x7f090024;
         public static final int header_party=0x7f09001c;
         public static final int hide_login=0x7f090068;
         public static final int image=0x7f09005c;
@@ -384,13 +384,13 @@ public final class R {
         public static final int imageView2=0x7f090088;
         public static final int imageView3=0x7f090089;
         public static final int imageView4=0x7f09008a;
-        public static final int img_Party=0x7f090024;
+        public static final int img_Party=0x7f090025;
         public static final int img_address=0x7f090092;
         public static final int img_friends=0x7f090095;
         public static final int img_join_list=0x7f09009b;
         public static final int img_settings=0x7f090098;
         public static final int img_tab_now=0x7f09008d;
-        public static final int img_user=0x7f090026;
+        public static final int img_user=0x7f090027;
         public static final int img_weixin=0x7f09008f;
         public static final int input=0x7f09005d;
         public static final int iv_activity_show=0x7f09000b;
@@ -411,7 +411,7 @@ public final class R {
         public static final int linearLayout1=0x7f090080;
         public static final int listview=0x7f09000a;
         public static final int listview_layout1=0x7f090054;
-        public static final int ll_btn_func_toolbar=0x7f09003b;
+        public static final int ll_btn_func_toolbar=0x7f09003c;
         public static final int login=0x7f090060;
         public static final int login_login_btn=0x7f09005a;
         public static final int login_passwd_edit=0x7f090058;
@@ -451,12 +451,12 @@ public final class R {
         public static final int right_btn=0x7f090006;
         public static final int rl_bottom=0x7f090007;
         public static final int rl_layout=0x7f090004;
-        public static final int rl_part_detail_Info=0x7f090025;
-        public static final int rl_part_detail_date_position=0x7f09002c;
-        public static final int rl_part_detail_description=0x7f090035;
-        public static final int rl_part_detail_textInfo=0x7f090027;
+        public static final int rl_part_detail_Info=0x7f090026;
+        public static final int rl_part_detail_date_position=0x7f09002d;
+        public static final int rl_part_detail_description=0x7f090036;
+        public static final int rl_part_detail_textInfo=0x7f090028;
         public static final int rl_part_list_item_partyInfo=0x7f09000e;
-        public static final int rl_party_detail_func_btn=0x7f090031;
+        public static final int rl_party_detail_func_btn=0x7f090032;
         public static final int rl_party_list_item1=0x7f09009c;
         public static final int rl_party_list_item2=0x7f0900a0;
         public static final int secondline=0x7f090002;
@@ -486,18 +486,18 @@ public final class R {
         public static final int tv_activityname=0x7f09000f;
         public static final int tv_activityplace=0x7f090012;
         public static final int tv_chatcontent=0x7f090043;
-        public static final int tv_comments_label=0x7f090038;
-        public static final int tv_description_label=0x7f090036;
+        public static final int tv_comments_label=0x7f090039;
+        public static final int tv_description_label=0x7f090037;
         public static final int tv_party_catagory_name=0x7f09009d;
-        public static final int tv_party_date=0x7f09002e;
-        public static final int tv_party_date_lable=0x7f09002d;
-        public static final int tv_party_detail_activity_name=0x7f09002b;
-        public static final int tv_party_detail_category_name=0x7f09002a;
-        public static final int tv_party_detail_user_name=0x7f090028;
-        public static final int tv_party_detail_user_role=0x7f090029;
+        public static final int tv_party_date=0x7f09002f;
+        public static final int tv_party_date_lable=0x7f09002e;
+        public static final int tv_party_detail_activity_name=0x7f09002c;
+        public static final int tv_party_detail_category_name=0x7f09002b;
+        public static final int tv_party_detail_user_name=0x7f090029;
+        public static final int tv_party_detail_user_role=0x7f09002a;
         public static final int tv_party_name=0x7f09009e;
-        public static final int tv_party_position=0x7f090030;
-        public static final int tv_party_position_lable=0x7f09002f;
+        public static final int tv_party_position=0x7f090031;
+        public static final int tv_party_position_lable=0x7f090030;
         public static final int tv_party_time=0x7f09009f;
         public static final int tv_sendtime=0x7f090041;
         public static final int tv_tab1=0x7f090090;
@@ -507,7 +507,7 @@ public final class R {
         public static final int tv_tab_luoli=0x7f090082;
         public static final int tv_tab_meinv=0x7f090081;
         public static final int tv_tab_qiche=0x7f090083;
-        public static final int tv_user_number_of_joinIn=0x7f090033;
+        public static final int tv_user_number_of_joinIn=0x7f090034;
         public static final int tv_username=0x7f090044;
         public static final int upright=0x7f09000c;
         public static final int vPager=0x7f090085;
@@ -1736,34 +1736,34 @@ public final class R {
         public static final int zone=0x7f06031e;
     }
     public static final class style {
-        public static final int AnimBottom=0x7f070006;
+        public static final int AnimBottom=0x7f070009;
         /**  ####################以上内容全部来自搬运 ############################################ 
          */
-        public static final int AnimFade=0x7f070005;
-        public static final int AnimHead=0x7f070009;
-        public static final int AnimTop=0x7f070007;
-        public static final int AnimTop2=0x7f070008;
-        public static final int Anim_style=0x7f07000a;
-        public static final int Anim_style2=0x7f07000b;
-        public static final int Anim_style_title=0x7f07000c;
+        public static final int AnimFade=0x7f070008;
+        public static final int AnimHead=0x7f07000c;
+        public static final int AnimTop=0x7f07000a;
+        public static final int AnimTop2=0x7f07000b;
+        public static final int Anim_style=0x7f07000d;
+        public static final int Anim_style2=0x7f07000e;
+        public static final int Anim_style_title=0x7f07000f;
         /**  ******************************活动模块styles*************************** 
          */
-        public static final int AppBaseTheme=0x7f070013;
-        public static final int AppNoTitleBarTheme=0x7f070015;
+        public static final int AppBaseTheme=0x7f070005;
+        public static final int AppNoTitleBarTheme=0x7f070007;
         public static final int AppTheme=0x7f070001;
-        public static final int CustomWindowTitleBackground=0x7f07000d;
+        public static final int CustomWindowTitleBackground=0x7f070010;
         /** 模糊
          */
-        public static final int HeadScale=0x7f070011;
-        public static final int MyDialogStyle=0x7f07000e;
+        public static final int HeadScale=0x7f070014;
+        public static final int MyDialogStyle=0x7f070011;
         /** 模糊
          */
-        public static final int MyDialogStyleBottom=0x7f07000f;
+        public static final int MyDialogStyleBottom=0x7f070012;
         /** 模糊
          */
-        public static final int MyDialogStyleTop=0x7f070010;
-        public static final int MyProgressBar=0x7f070012;
-        public static final int NoTitleBarTheme=0x7f070014;
+        public static final int MyDialogStyleTop=0x7f070013;
+        public static final int MyProgressBar=0x7f070015;
+        public static final int NoTitleBarTheme=0x7f070006;
         public static final int chat_content_date_style=0x7f070003;
         public static final int chat_text_date_style=0x7f070002;
         public static final int chat_text_name_style=0x7f070004;

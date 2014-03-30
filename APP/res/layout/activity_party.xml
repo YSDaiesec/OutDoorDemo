@@ -10,11 +10,13 @@
         android:layout_height="50dp"
         layout="@layout/header" />
 
+    <!-- 为我参与的和我关注的Btn块添加了top_theme_blue -->
     <RelativeLayout
         android:id="@+id/layout_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/header_party">
+        android:layout_below="@id/header_party"
+        android:background="@drawable/top_theme_blue" >
 
         <Button
             android:id="@+id/btn_join"
@@ -30,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:onClick="btnFavorite"
-            android:text="我关心的"/>
+            android:text="我关注的"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -44,8 +46,8 @@
             android:id="@+id/lv_join"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" 
-            android:divider="#ffffff"
-	        android:dividerHeight="1dp"
+            android:divider="#000000"
+	        android:dividerHeight="1px"
 	        android:cacheColorHint="#aa000000"
 	        android:scrollingCache="false">
         </ListView>
@@ -63,8 +65,8 @@
             android:id="@+id/lv_favorite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" 
-            android:divider="#ffffff"
-	        android:dividerHeight="5dp"
+            android:divider="#000000"
+	        android:dividerHeight="1px"
 	        android:cacheColorHint="#aa000000"
 	        android:scrollingCache="false" >
         </ListView>

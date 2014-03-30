@@ -39,7 +39,8 @@ public class ChatActivity extends Activity implements OnClickListener {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_chat);
+		//chat_xiaohei---weixin Layout;  activity_chat---自定义Layout
+		setContentView(R.layout.chat_xiaohei);
 		// 启动activity时不自动弹出软键盘
 		getWindow().setSoftInputMode(
 				
